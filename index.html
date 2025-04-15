@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles-website.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="header-title">Welcome to Klosop's Website</h1>
+        <p id="header-subtitle">Your one-stop destination for everything!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="gallery">Gallery</a></li>
+            <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+            <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <section id="home" class="page active">
+            <div class="section-header" style="display: none;">
+                <h1 class="section-title">Welcome to Klosop's Website</h1>
+                <p class="section-subtitle">Your one-stop destination for everything!</p>
+            </div>
+            <div class="home-title-container">  <h2>Home</h2>
+            </div>
+            <p>Welcome to the home section! Explore the website using the navigation above.</p>
+        </section>
+
+        <section id="gallery" class="page">
+            <div class="section-header" style="display: none;">
+                <h1 class="section-title">Gallery</h1>
+                <p class="section-subtitle">Explore our visual collection!</p>
+            </div>
+            
+            <div class="gallery-title-container">  
+                <h2>Gallery</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div class="image-title">Cloud Nostalgia</div>
+                </div>
+         
+                <div class="gallery-item">
+                    <img src="image2.jpg" alt="Image 2">
+                    <div class="image-title">Klosop</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div class="image-title">Skylight Gateway</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image4.jpg" alt="Image 4">
+                    <div class="image-title">Cat Carpet</div>
+                </div>
+            </div>
+            <div id="image-popup" class="popup">
+                <span class="close">&times;</span>
+                <img class="popup-content" id="popup-image">
+                <div id="overlay"></div>
+            </div>
+        </section>
+
+        <section id="blog" class="page">
+            <div class="section-header" style="display: none;">
+                <h1 class="section-title">Blog</h1>
+                <p class="section-subtitle">Read our latest updates!</p>
+            </div>
+   
+            <div class="blog-title-container">  <h2>Blog</h2>
+            </div>
+            <p>Read our latest blog posts and stay updated.</p>
+            <div class="gallery-container">
+                <div class="gallery-item blog-link" data-wiki-url="https://en.wikipedia.org/wiki/Ceviche">
+                    <img src="blog1.jpg" alt="Blog Post 1">
+                    <div class="image-title">Ceviche</div>
+                </div>
+                <div class="gallery-item blog-link" data-wiki-url="https://en.wikipedia.org/wiki/Steak_tartare">
+                    <img src="blog2.jpg" alt="Blog Post 2">
+                    <div class="image-title">Steak à la tartare</div>
+                </div>
+                 <div class="gallery-item blog-link" data-wiki-url="https://en.wikipedia.org/wiki/Carpaccio">
+                    <img src="blog3.jpg" alt="Blog Post 3">
+                    <div class="image-title">Carpaccio</div>
+                </div>
+                <div class="gallery-item blog-link" data-wiki-url="https://en.wikipedia.org/wiki/%C3%87i%C4%9F_k%C3%B6fte">
+                    <img src="blog4.jpg" alt="Blog Post 4">
+                    <div class="image-title">Çiğ köfte</div>
+                </div>
+            </div>
+            <div id="image-popup" class="popup">
+                <span class="close">&times;</span>
+                <img class="popup-content" id="popup-image">
+                <div id="overlay"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="section-header" style="display: none;">
+                <h1 class="section-title">Contact Us</h1>
+                <p class="section-subtitle">We'd love to hear from you!</p>
+            </div>
+            <div class="contact-title-container">  <h2>Contact</h2>
+            </div>
+            <p>Get in touch with us! We'd love to hear from you.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Klosop. All rights reserved.</p>
+    </footer>
+
+    <script src="script-website.js"></script>
+</body>
+
+</html>
